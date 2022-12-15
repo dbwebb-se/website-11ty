@@ -1,0 +1,296 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+ width="630px" height="325px"
+ viewBox="0 0 630 325"
+ xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"
+ stroke-width="1" text-rendering="geometricPrecision">
+<polygon fill="white" points="46,7 56,7 56,16 46,16"/>
+<text x="52" y="16" textLength="8" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+A
+</text>
+<polygon fill="white" points="151,7 161,7 161,16 151,16"/>
+<text x="157" y="16" textLength="8" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+B
+</text>
+<polygon fill="white" points="256,7 266,7 266,16 256,16"/>
+<text x="262" y="16" textLength="9" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+C
+</text>
+<polygon fill="white" points="361,7 371,7 371,16 361,16"/>
+<text x="367" y="16" textLength="9" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+D
+</text>
+<polygon fill="white" points="466,7 476,7 476,16 466,16"/>
+<text x="472" y="16" textLength="8" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+E
+</text>
+<polygon fill="white" points="572,7 580,7 580,16 572,16"/>
+<text x="577" y="16" textLength="7" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+F
+</text>
+<line x1="52" y1="22" x2="52" y2="39" stroke="black"/>
+<line x1="157" y1="22" x2="157" y2="39" stroke="black"/>
+<line x1="262" y1="22" x2="262" y2="39" stroke="black"/>
+<line x1="367" y1="22" x2="367" y2="39" stroke="black"/>
+<line x1="472" y1="22" x2="472" y2="39" stroke="black"/>
+<line x1="577" y1="22" x2="577" y2="39" stroke="black"/>
+<line x1="52" y1="39" x2="52" y2="67" stroke="black"/>
+<line x1="157" y1="39" x2="157" y2="67" stroke="black"/>
+<line x1="262" y1="39" x2="262" y2="67" stroke="black"/>
+<line x1="367" y1="39" x2="367" y2="67" stroke="black"/>
+<line x1="472" y1="39" x2="472" y2="67" stroke="black"/>
+<line x1="577" y1="39" x2="577" y2="67" stroke="black"/>
+<polygon fill="white" points="8,39 97,39 97,61 8,61"/>
+<line x1="8" y1="39" x2="97" y2="39" stroke="black"/>
+<line x1="8" y1="61" x2="97" y2="61" stroke="black"/>
+<line x1="8" y1="39" x2="8" y2="61" stroke="black"/>
+<line x1="97" y1="39" x2="97" y2="61" stroke="black"/>
+<polygon fill="white" points="19,46 84,46 84,55 19,55"/>
+<text x="20" y="55" textLength="63" font-family="Helvetica" font-size="12" fill="black">
+Webbl&#xe4;sare
+</text>
+<polygon fill="white" points="113,39 202,39 202,61 113,61"/>
+<line x1="113" y1="39" x2="202" y2="39" stroke="black"/>
+<line x1="113" y1="61" x2="202" y2="61" stroke="black"/>
+<line x1="113" y1="39" x2="113" y2="61" stroke="black"/>
+<line x1="202" y1="39" x2="202" y2="61" stroke="black"/>
+<polygon fill="white" points="117,46 196,46 196,55 117,55"/>
+<text x="118" y="55" textLength="77" font-family="Helvetica" font-size="12" fill="black">
+Frontcontroller
+</text>
+<polygon fill="white" points="218,39 307,39 307,61 218,61"/>
+<line x1="218" y1="39" x2="307" y2="39" stroke="black"/>
+<line x1="218" y1="61" x2="307" y2="61" stroke="black"/>
+<line x1="218" y1="39" x2="218" y2="61" stroke="black"/>
+<line x1="307" y1="39" x2="307" y2="61" stroke="black"/>
+<polygon fill="white" points="234,46 288,46 288,55 234,55"/>
+<text x="235" y="55" textLength="52" font-family="Helvetica" font-size="12" fill="black">
+Controller
+</text>
+<polygon fill="white" points="323,39 412,39 412,61 323,61"/>
+<line x1="323" y1="39" x2="412" y2="39" stroke="black"/>
+<line x1="323" y1="61" x2="412" y2="61" stroke="black"/>
+<line x1="323" y1="39" x2="323" y2="61" stroke="black"/>
+<line x1="412" y1="39" x2="412" y2="61" stroke="black"/>
+<polygon fill="white" points="349,46 384,46 384,55 349,55"/>
+<text x="350" y="55" textLength="33" font-family="Helvetica" font-size="12" fill="black">
+Model
+</text>
+<polygon fill="white" points="428,39 517,39 517,61 428,61"/>
+<line x1="428" y1="39" x2="517" y2="39" stroke="black"/>
+<line x1="428" y1="61" x2="517" y2="61" stroke="black"/>
+<line x1="428" y1="39" x2="428" y2="61" stroke="black"/>
+<line x1="517" y1="39" x2="517" y2="61" stroke="black"/>
+<polygon fill="white" points="457,46 485,46 485,55 457,55"/>
+<text x="458" y="55" textLength="26" font-family="Helvetica" font-size="12" fill="black">
+View
+</text>
+<polygon fill="white" points="533,39 622,39 622,61 533,61"/>
+<line x1="533" y1="39" x2="622" y2="39" stroke="black"/>
+<line x1="533" y1="61" x2="622" y2="61" stroke="black"/>
+<line x1="533" y1="39" x2="533" y2="61" stroke="black"/>
+<line x1="622" y1="39" x2="622" y2="61" stroke="black"/>
+<polygon fill="white" points="541,46 612,46 612,55 541,55"/>
+<text x="542" y="55" textLength="69" font-family="Helvetica" font-size="12" fill="black">
+Data storage
+</text>
+<line x1="52" y1="67" x2="52" y2="95" stroke="black"/>
+<line x1="157" y1="67" x2="157" y2="95" stroke="black"/>
+<line x1="262" y1="67" x2="262" y2="95" stroke="black"/>
+<line x1="367" y1="67" x2="367" y2="95" stroke="black"/>
+<line x1="472" y1="67" x2="472" y2="95" stroke="black"/>
+<line x1="577" y1="67" x2="577" y2="95" stroke="black"/>
+<polygon fill="white" points="14,67 91,67 91,89 14,89"/>
+<polygon fill="white" points="8,73 97,73 97,83 8,83"/>
+<circle fill="white" cx="14" cy="73" r="6"/>
+<circle fill="white" cx="91" cy="73" r="6"/>
+<circle fill="white" cx="14" cy="83" r="6"/>
+<circle fill="white" cx="91" cy="83" r="6"/>
+<line x1="14" y1="67" x2="91" y2="67" stroke="black"/>
+<line x1="14" y1="89" x2="91" y2="89" stroke="black"/>
+<line x1="8" y1="73" x2="8" y2="83" stroke="black"/>
+<line x1="97" y1="73" x2="97" y2="83" stroke="black"/>
+<path d="M 8 73 A6,6 0 0,1 14,67" stroke="black" fill="none"/><path d="M 91 67 A6,6 0 0,1 97,73" stroke="black" fill="none"/><path d="M 97 83 A6,6 0 0,1 91,89" stroke="black" fill="none"/><path d="M 14 89 A6,6 0 0,1 8,83" stroke="black" fill="none"/><polygon fill="white" points="22,74 81,74 81,83 22,83"/>
+<text x="23" y="83" textLength="57" font-family="Helvetica" font-size="12" fill="black">
+Anv&#xe4;ndare
+</text>
+<polygon fill="white" points="119,67 196,67 196,89 119,89"/>
+<polygon fill="white" points="113,73 202,73 202,83 113,83"/>
+<circle fill="white" cx="119" cy="73" r="6"/>
+<circle fill="white" cx="196" cy="73" r="6"/>
+<circle fill="white" cx="119" cy="83" r="6"/>
+<circle fill="white" cx="196" cy="83" r="6"/>
+<line x1="119" y1="67" x2="196" y2="67" stroke="black"/>
+<line x1="119" y1="89" x2="196" y2="89" stroke="black"/>
+<line x1="113" y1="73" x2="113" y2="83" stroke="black"/>
+<line x1="202" y1="73" x2="202" y2="83" stroke="black"/>
+<path d="M 113 73 A6,6 0 0,1 119,67" stroke="black" fill="none"/><path d="M 196 67 A6,6 0 0,1 202,73" stroke="black" fill="none"/><path d="M 202 83 A6,6 0 0,1 196,89" stroke="black" fill="none"/><path d="M 119 89 A6,6 0 0,1 113,83" stroke="black" fill="none"/><polygon fill="white" points="129,74 183,74 183,83 129,83"/>
+<text x="130" y="83" textLength="52" font-family="Helvetica" font-size="12" fill="black">
+index.php
+</text>
+<polygon fill="white" points="224,67 301,67 301,89 224,89"/>
+<polygon fill="white" points="218,73 307,73 307,83 218,83"/>
+<circle fill="white" cx="224" cy="73" r="6"/>
+<circle fill="white" cx="301" cy="73" r="6"/>
+<circle fill="white" cx="224" cy="83" r="6"/>
+<circle fill="white" cx="301" cy="83" r="6"/>
+<line x1="224" y1="67" x2="301" y2="67" stroke="black"/>
+<line x1="224" y1="89" x2="301" y2="89" stroke="black"/>
+<line x1="218" y1="73" x2="218" y2="83" stroke="black"/>
+<line x1="307" y1="73" x2="307" y2="83" stroke="black"/>
+<path d="M 218 73 A6,6 0 0,1 224,67" stroke="black" fill="none"/><path d="M 301 67 A6,6 0 0,1 307,73" stroke="black" fill="none"/><path d="M 307 83 A6,6 0 0,1 301,89" stroke="black" fill="none"/><path d="M 224 89 A6,6 0 0,1 218,83" stroke="black" fill="none"/><polygon fill="white" points="223,74 300,74 300,83 223,83"/>
+<text x="224" y="83" textLength="75" font-family="Helvetica" font-size="12" fill="black">
+CCGuestbook
+</text>
+<polygon fill="white" points="329,67 406,67 406,89 329,89"/>
+<polygon fill="white" points="323,73 412,73 412,83 323,83"/>
+<circle fill="white" cx="329" cy="73" r="6"/>
+<circle fill="white" cx="406" cy="73" r="6"/>
+<circle fill="white" cx="329" cy="83" r="6"/>
+<circle fill="white" cx="406" cy="83" r="6"/>
+<line x1="329" y1="67" x2="406" y2="67" stroke="black"/>
+<line x1="329" y1="89" x2="406" y2="89" stroke="black"/>
+<line x1="323" y1="73" x2="323" y2="83" stroke="black"/>
+<line x1="412" y1="73" x2="412" y2="83" stroke="black"/>
+<path d="M 323 73 A6,6 0 0,1 329,67" stroke="black" fill="none"/><path d="M 406 67 A6,6 0 0,1 412,73" stroke="black" fill="none"/><path d="M 412 83 A6,6 0 0,1 406,89" stroke="black" fill="none"/><path d="M 329 89 A6,6 0 0,1 323,83" stroke="black" fill="none"/><polygon fill="white" points="327,74 406,74 406,83 327,83"/>
+<text x="328" y="83" textLength="77" font-family="Helvetica" font-size="12" fill="black">
+CMGuestbook
+</text>
+<polygon fill="white" points="434,67 511,67 511,89 434,89"/>
+<polygon fill="white" points="428,73 517,73 517,83 428,83"/>
+<circle fill="white" cx="434" cy="73" r="6"/>
+<circle fill="white" cx="511" cy="73" r="6"/>
+<circle fill="white" cx="434" cy="83" r="6"/>
+<circle fill="white" cx="511" cy="83" r="6"/>
+<line x1="434" y1="67" x2="511" y2="67" stroke="black"/>
+<line x1="434" y1="89" x2="511" y2="89" stroke="black"/>
+<line x1="428" y1="73" x2="428" y2="83" stroke="black"/>
+<line x1="517" y1="73" x2="517" y2="83" stroke="black"/>
+<path d="M 428 73 A6,6 0 0,1 434,67" stroke="black" fill="none"/><path d="M 511 67 A6,6 0 0,1 517,73" stroke="black" fill="none"/><path d="M 517 83 A6,6 0 0,1 511,89" stroke="black" fill="none"/><path d="M 434 89 A6,6 0 0,1 428,83" stroke="black" fill="none"/><polygon fill="white" points="435,74 508,74 508,83 435,83"/>
+<text x="436" y="83" textLength="71" font-family="Helvetica" font-size="12" fill="black">
+guestbook.tpl
+</text>
+<polygon fill="white" points="539,67 616,67 616,89 539,89"/>
+<polygon fill="white" points="533,73 622,73 622,83 533,83"/>
+<circle fill="white" cx="539" cy="73" r="6"/>
+<circle fill="white" cx="616" cy="73" r="6"/>
+<circle fill="white" cx="539" cy="83" r="6"/>
+<circle fill="white" cx="616" cy="83" r="6"/>
+<line x1="539" y1="67" x2="616" y2="67" stroke="black"/>
+<line x1="539" y1="89" x2="616" y2="89" stroke="black"/>
+<line x1="533" y1="73" x2="533" y2="83" stroke="black"/>
+<line x1="622" y1="73" x2="622" y2="83" stroke="black"/>
+<path d="M 533 73 A6,6 0 0,1 539,67" stroke="black" fill="none"/><path d="M 616 67 A6,6 0 0,1 622,73" stroke="black" fill="none"/><path d="M 622 83 A6,6 0 0,1 616,89" stroke="black" fill="none"/><path d="M 539 89 A6,6 0 0,1 533,83" stroke="black" fill="none"/><polygon fill="white" points="545,74 607,74 607,83 545,83"/>
+<text x="546" y="83" textLength="60" font-family="Helvetica" font-size="12" fill="black">
+CDatabase
+</text>
+<line x1="52" y1="95" x2="52" y2="112" stroke="black"/>
+<line x1="157" y1="95" x2="157" y2="112" stroke="black"/>
+<line x1="262" y1="95" x2="262" y2="112" stroke="black"/>
+<line x1="367" y1="95" x2="367" y2="112" stroke="black"/>
+<line x1="472" y1="95" x2="472" y2="112" stroke="black"/>
+<line x1="577" y1="95" x2="577" y2="112" stroke="black"/>
+<line x1="52" y1="112" x2="52" y2="140" stroke="black"/>
+<line x1="157" y1="112" x2="157" y2="140" stroke="black"/>
+<line x1="262" y1="112" x2="262" y2="140" stroke="black"/>
+<line x1="367" y1="112" x2="367" y2="140" stroke="black"/>
+<line x1="472" y1="112" x2="472" y2="140" stroke="black"/>
+<line x1="577" y1="112" x2="577" y2="140" stroke="black"/>
+<line x1="52" y1="123" x2="157" y2="123" stroke="black"/>
+<line x1="157" y1="123" x2="147" y2="129" stroke="black"/>
+<polygon fill="white" points="62,113 147,113 147,122 62,122"/>
+<text x="63" y="122" textLength="83" font-family="Helvetica" font-size="12" fill="black">
+guestbook/view
+</text>
+<line x1="52" y1="140" x2="52" y2="168" stroke="black"/>
+<line x1="157" y1="140" x2="157" y2="168" stroke="black"/>
+<line x1="262" y1="140" x2="262" y2="168" stroke="black"/>
+<line x1="367" y1="140" x2="367" y2="168" stroke="black"/>
+<line x1="472" y1="140" x2="472" y2="168" stroke="black"/>
+<line x1="577" y1="140" x2="577" y2="168" stroke="black"/>
+<line x1="157" y1="151" x2="262" y2="151" stroke="black"/>
+<polygon fill="black" points="262,151 252,157 252,145"/>
+<polygon fill="white" points="191,141 227,141 227,150 191,150"/>
+<text x="192" y="150" textLength="34" font-family="Helvetica" font-size="12" fill="black">
+View()
+</text>
+<line x1="52" y1="168" x2="52" y2="196" stroke="black"/>
+<line x1="157" y1="168" x2="157" y2="196" stroke="black"/>
+<line x1="262" y1="168" x2="262" y2="196" stroke="black"/>
+<line x1="367" y1="168" x2="367" y2="196" stroke="black"/>
+<line x1="472" y1="168" x2="472" y2="196" stroke="black"/>
+<line x1="577" y1="168" x2="577" y2="196" stroke="black"/>
+<line x1="262" y1="179" x2="367" y2="179" stroke="black"/>
+<polygon fill="black" points="367,179 357,185 357,173"/>
+<polygon fill="white" points="288,169 340,169 340,178 288,178"/>
+<text x="289" y="178" textLength="50" font-family="Helvetica" font-size="12" fill="black">
+ReadAll()
+</text>
+<line x1="52" y1="196" x2="52" y2="224" stroke="black"/>
+<line x1="157" y1="196" x2="157" y2="224" stroke="black"/>
+<line x1="262" y1="196" x2="262" y2="224" stroke="black"/>
+<line x1="367" y1="196" x2="367" y2="224" stroke="black"/>
+<line x1="472" y1="196" x2="472" y2="224" stroke="black"/>
+<line x1="577" y1="196" x2="577" y2="224" stroke="black"/>
+<line x1="367" y1="207" x2="577" y2="207" stroke="black"/>
+<polygon fill="black" points="577,207 567,213 567,201"/>
+<polygon fill="white" points="393,197 550,197 550,206 393,206"/>
+<text x="394" y="206" textLength="155" font-family="Helvetica" font-size="12" fill="black">
+SELECT * FROM Guestbook
+</text>
+<line x1="52" y1="224" x2="52" y2="252" stroke="black"/>
+<line x1="157" y1="224" x2="157" y2="252" stroke="black"/>
+<line x1="262" y1="224" x2="262" y2="252" stroke="black"/>
+<line x1="367" y1="224" x2="367" y2="252" stroke="black"/>
+<line x1="472" y1="224" x2="472" y2="252" stroke="black"/>
+<line x1="577" y1="224" x2="577" y2="252" stroke="black"/>
+<line x1="367" y1="235" x2="262" y2="235" stroke="black" stroke-dasharray="2,2"/>
+<polygon fill="black" points="262,235 272,241 272,229"/>
+<polygon fill="white" points="292,225 337,225 337,234 292,234"/>
+<text x="293" y="234" textLength="43" font-family="Helvetica" font-size="12" fill="black">
+$entries
+</text>
+<line x1="52" y1="252" x2="52" y2="280" stroke="black"/>
+<line x1="157" y1="252" x2="157" y2="280" stroke="black"/>
+<line x1="262" y1="252" x2="262" y2="280" stroke="black"/>
+<line x1="367" y1="252" x2="367" y2="280" stroke="black"/>
+<line x1="472" y1="252" x2="472" y2="280" stroke="black"/>
+<line x1="577" y1="252" x2="577" y2="280" stroke="black"/>
+<line x1="262" y1="263" x2="472" y2="263" stroke="black"/>
+<polygon fill="black" points="472,263 462,269 462,257"/>
+<polygon fill="white" points="292,253 440,253 440,262 292,262"/>
+<text x="293" y="262" textLength="146" font-family="Helvetica" font-size="12" fill="black">
+include('guestbook.tpl.php')
+</text>
+<line x1="52" y1="280" x2="52" y2="308" stroke="black"/>
+<line x1="157" y1="280" x2="157" y2="308" stroke="black"/>
+<line x1="262" y1="280" x2="262" y2="308" stroke="black"/>
+<line x1="367" y1="280" x2="367" y2="308" stroke="black"/>
+<line x1="472" y1="280" x2="472" y2="308" stroke="black"/>
+<line x1="577" y1="280" x2="577" y2="308" stroke="black"/>
+<line x1="262" y1="291" x2="52" y2="291" stroke="black"/>
+<line x1="52" y1="291" x2="62" y2="297" stroke="black"/>
+<polygon fill="white" points="67,281 246,281 246,290 67,290"/>
+<text x="68" y="290" textLength="177" font-family="Helvetica" font-size="12" fill="black">
+Display guestbook with all entries
+</text>
+<line x1="52" y1="308" x2="52" y2="325" stroke="black"/>
+<line x1="157" y1="308" x2="157" y2="325" stroke="black"/>
+<line x1="262" y1="308" x2="262" y2="325" stroke="black"/>
+<line x1="367" y1="308" x2="367" y2="325" stroke="black"/>
+<line x1="472" y1="308" x2="472" y2="325" stroke="black"/>
+<line x1="577" y1="308" x2="577" y2="325" stroke="black"/>
+<line x1="52" y1="319" x2="52" y2="325" stroke="black"/>
+<line x1="157" y1="319" x2="157" y2="325" stroke="black"/>
+<line x1="262" y1="319" x2="262" y2="325" stroke="black"/>
+<line x1="367" y1="319" x2="367" y2="325" stroke="black"/>
+<line x1="472" y1="319" x2="472" y2="325" stroke="black"/>
+<line x1="577" y1="319" x2="577" y2="325" stroke="black"/>
+</svg>

@@ -1,0 +1,152 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+ width="720px" height="263px"
+ viewBox="0 0 720 263"
+ xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"
+ stroke-width="1" text-rendering="geometricPrecision">
+<polygon fill="white" points="84,7 94,7 94,16 84,16"/>
+<text x="90" y="16" textLength="8" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+A
+</text>
+<polygon fill="white" points="264,7 274,7 274,16 264,16"/>
+<text x="270" y="16" textLength="8" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+B
+</text>
+<polygon fill="white" points="444,7 454,7 454,16 444,16"/>
+<text x="450" y="16" textLength="9" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+C
+</text>
+<polygon fill="white" points="624,7 634,7 634,16 624,16"/>
+<text x="630" y="16" textLength="9" font-family="Helvetica" font-size="12" fill="black" text-anchor="middle">
+
+D
+</text>
+<line x1="90" y1="22" x2="90" y2="39" stroke="black"/>
+<line x1="270" y1="22" x2="270" y2="39" stroke="black"/>
+<line x1="450" y1="22" x2="450" y2="39" stroke="black"/>
+<line x1="630" y1="22" x2="630" y2="39" stroke="black"/>
+<line x1="90" y1="39" x2="90" y2="61" stroke="black"/>
+<line x1="270" y1="39" x2="270" y2="61" stroke="black"/>
+<line x1="450" y1="39" x2="450" y2="61" stroke="black"/>
+<line x1="630" y1="39" x2="630" y2="61" stroke="black"/>
+<polygon fill="white" points="8,39 160,39 160,55 8,55"/>
+<polygon fill="white" points="8,51 172,51 172,55 8,55"/>
+<polygon fill="white" points="160,39 172,51 160,51"/>
+<line x1="8" y1="39" x2="160" y2="39" stroke="black"/>
+<line x1="8" y1="55" x2="172" y2="55" stroke="black"/>
+<line x1="8" y1="39" x2="8" y2="55" stroke="black"/>
+<line x1="172" y1="51" x2="172" y2="55" stroke="black"/>
+<line x1="160" y1="39" x2="172" y2="51" stroke="black"/>
+<line x1="160" y1="39" x2="160" y2="51" stroke="black"/>
+<line x1="172" y1="51" x2="160" y2="51" stroke="black"/>
+<polygon fill="white" points="53,43 126,43 126,52 53,52"/>
+<text x="54" y="52" textLength="71" font-family="Helvetica" font-size="12" fill="black">
+Web browser
+</text>
+<polygon fill="white" points="188,39 352,39 352,55 188,55"/>
+<line x1="188" y1="39" x2="352" y2="39" stroke="black"/>
+<line x1="188" y1="55" x2="352" y2="55" stroke="black"/>
+<line x1="188" y1="39" x2="188" y2="55" stroke="black"/>
+<line x1="352" y1="39" x2="352" y2="55" stroke="black"/>
+<polygon fill="white" points="230,43 309,43 309,52 230,52"/>
+<text x="231" y="52" textLength="77" font-family="Helvetica" font-size="12" fill="black">
+UserController
+</text>
+<polygon fill="white" points="368,39 532,39 532,55 368,55"/>
+<line x1="368" y1="39" x2="532" y2="39" stroke="black"/>
+<line x1="368" y1="55" x2="532" y2="55" stroke="black"/>
+<line x1="368" y1="39" x2="368" y2="55" stroke="black"/>
+<line x1="532" y1="39" x2="532" y2="55" stroke="black"/>
+<polygon fill="white" points="420,43 479,43 479,52 420,52"/>
+<text x="421" y="52" textLength="57" font-family="Helvetica" font-size="12" fill="black">
+LoginForm
+</text>
+<polygon fill="white" points="548,39 712,39 712,55 548,55"/>
+<line x1="548" y1="39" x2="712" y2="39" stroke="black"/>
+<line x1="548" y1="55" x2="712" y2="55" stroke="black"/>
+<line x1="548" y1="39" x2="548" y2="55" stroke="black"/>
+<line x1="712" y1="39" x2="712" y2="55" stroke="black"/>
+<polygon fill="white" points="598,43 661,43 661,52 598,52"/>
+<text x="599" y="52" textLength="61" font-family="Helvetica" font-size="12" fill="black">
+FormModel
+</text>
+<line x1="90" y1="61" x2="90" y2="89" stroke="black"/>
+<line x1="270" y1="61" x2="270" y2="89" stroke="black"/>
+<line x1="450" y1="61" x2="450" y2="89" stroke="black"/>
+<line x1="630" y1="61" x2="630" y2="89" stroke="black"/>
+<line x1="90" y1="72" x2="270" y2="72" stroke="black"/>
+<line x1="270" y1="72" x2="260" y2="78" stroke="black"/>
+<polygon fill="white" points="134,62 224,62 224,71 134,71"/>
+<text x="135" y="71" textLength="88" font-family="Helvetica" font-size="12" fill="black">
+POST user/login
+</text>
+<line x1="90" y1="89" x2="90" y2="117" stroke="black"/>
+<line x1="270" y1="89" x2="270" y2="117" stroke="black"/>
+<line x1="450" y1="89" x2="450" y2="117" stroke="black"/>
+<line x1="630" y1="89" x2="630" y2="117" stroke="black"/>
+<line x1="270" y1="100" x2="450" y2="100" stroke="black"/>
+<polygon fill="black" points="450,100 440,106 440,94"/>
+<polygon fill="white" points="325,90 394,90 394,99 325,99"/>
+<text x="326" y="99" textLength="67" font-family="Helvetica" font-size="12" fill="black">
+create $form
+</text>
+<line x1="90" y1="117" x2="90" y2="145" stroke="black"/>
+<line x1="270" y1="117" x2="270" y2="145" stroke="black"/>
+<line x1="450" y1="117" x2="450" y2="145" stroke="black"/>
+<line x1="630" y1="117" x2="630" y2="145" stroke="black"/>
+<line x1="270" y1="128" x2="630" y2="128" stroke="black"/>
+<polygon fill="black" points="630,128 620,134 620,122"/>
+<polygon fill="white" points="408,118 491,118 491,127 408,127"/>
+<text x="409" y="127" textLength="81" font-family="Helvetica" font-size="12" fill="black">
+$form-&gt;check()
+</text>
+<line x1="90" y1="145" x2="90" y2="162" stroke="black"/>
+<line x1="270" y1="145" x2="270" y2="162" stroke="black"/>
+<line x1="450" y1="145" x2="450" y2="162" stroke="black"/>
+<line x1="630" y1="145" x2="630" y2="162" stroke="black"/>
+<line x1="45" y1="150" x2="675" y2="150" stroke="black" stroke-dasharray="2,2"/>
+<polygon fill="white" points="294,146 424,146 424,155 294,155"/>
+<text x="295" y="155" textLength="128" font-family="Helvetica" font-size="12" fill="black">
+The form was submitted
+</text>
+<line x1="90" y1="162" x2="90" y2="190" stroke="black"/>
+<line x1="270" y1="162" x2="270" y2="190" stroke="black"/>
+<line x1="450" y1="162" x2="450" y2="190" stroke="black"/>
+<line x1="630" y1="162" x2="630" y2="190" stroke="black"/>
+<path d="M 630 167 A90,6 0 0,1 630,179" stroke="black" fill="none"/><polygon fill="black" points="630,179 640,185 640,173"/>
+<polygon fill="white" points="495,163 628,163 628,172 495,172"/>
+<text x="496" y="172" textLength="131" font-family="Helvetica" font-size="12" fill="black">
+$form-&gt;submitCallback()
+</text>
+<line x1="90" y1="190" x2="90" y2="218" stroke="black"/>
+<line x1="270" y1="190" x2="270" y2="218" stroke="black"/>
+<line x1="450" y1="190" x2="450" y2="218" stroke="black"/>
+<line x1="630" y1="190" x2="630" y2="218" stroke="black"/>
+<path d="M 630 195 A90,6 0 0,1 630,207" stroke="black" fill="none"/><polygon fill="black" points="630,207 640,213 640,201"/>
+<polygon fill="white" points="500,191 628,191 628,200 500,200"/>
+<text x="501" y="200" textLength="126" font-family="Helvetica" font-size="12" fill="black">
+$form-&gt;callbackFailed()
+</text>
+<line x1="90" y1="218" x2="90" y2="246" stroke="black"/>
+<line x1="270" y1="218" x2="270" y2="246" stroke="black"/>
+<line x1="450" y1="218" x2="450" y2="246" stroke="black"/>
+<line x1="630" y1="218" x2="630" y2="246" stroke="black"/>
+<line x1="630" y1="229" x2="90" y2="229" stroke="black"/>
+<polygon fill="black" points="90,229 100,235 100,223"/>
+<polygon fill="white" points="290,219 428,219 428,228 290,228"/>
+<text x="291" y="228" textLength="136" font-family="Helvetica" font-size="12" fill="black">
+$response-&gt;redirectSelf()
+</text>
+<line x1="90" y1="246" x2="90" y2="263" stroke="black"/>
+<line x1="270" y1="246" x2="270" y2="263" stroke="black"/>
+<line x1="450" y1="246" x2="450" y2="263" stroke="black"/>
+<line x1="630" y1="246" x2="630" y2="263" stroke="black"/>
+<line x1="90" y1="257" x2="90" y2="263" stroke="black"/>
+<line x1="270" y1="257" x2="270" y2="263" stroke="black"/>
+<line x1="450" y1="257" x2="450" y2="263" stroke="black"/>
+<line x1="630" y1="257" x2="630" y2="263" stroke="black"/>
+</svg>

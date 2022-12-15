@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+<h1>Rexexp Quiz (4)</h1>
+    
+<pre>
+preg_match("/^#include[ \t]([\w.]+)$/", $line, $matches)
+</pre>
+
+<pre>
+protected function blockInclude($line)
+{
+    if ($this->config["include"]
+        && preg_match("/^#include[ \t]([\w.]+)$/", $line, $matches)
+    ) {
+        $file = $this->config["include_base"]."/".$matches[1];
+        if (!is_readable($file)) {
+            throw new Exception("Could not find include file: '$file'");
+        }
+        $include = file_get_contents($file);
+        $include = str_replace(array("\r\n", "\r"), "\n", $include);
+        $include = explode("\n", $include);
+        array_splice(
+            $this->lines,
+            $this->lineNumber - 1,
+            1,
+            $include
+        );
+        $this->lineNumber--;
+        return true;
+    }
+}
+</pre>
+
+
+<p>
+    <a href="1.html">fråga 1</a> |
+    <a href="2.html">fråga 2</a> |
+    <a href="3.html">fråga 3</a> |
+    <a href="4.html">fråga 4</a> |
+    <a href="5.html">fråga 5</a> |
+</p>
+<p>Svar:<br>
+    <a href="1s.html">fråga 1</a> |
+    <a href="2s.html">fråga 2</a> |
+    <a href="3s.html">fråga 3</a> |
+    <a href="4s.html">fråga 4</a> |
+    <a href="5s.html">fråga 5</a> |
+</p>

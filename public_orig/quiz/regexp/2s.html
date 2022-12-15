@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+<h1>Rexexp Quiz (2)</h1>
+    
+<pre>
+$level = "$start-$stop";
+$pattern = "#(&lt;h[$level] id=\"([\w\-_]+)\">)(.+)(&lt;/h[$level]>)#";
+</pre>
+
+<pre>
+public function createAnchor4Header($text, $start = 1, $stop = 4)
+{
+    $level = "$start-$stop";
+    $pattern = "#(&lt;h[$level] id=\"([\w\-_]+)\">)(.+)(&lt;/h[$level]>)#";
+    return preg_replace(
+        $pattern,
+        "$1<a class=\"header-anchor\" href=\"#$2\">#</a>$3$4",
+        $text
+    );
+}
+</pre>
+
+
+<p>
+    <a href="1.html">fråga 1</a> |
+    <a href="2.html">fråga 2</a> |
+    <a href="3.html">fråga 3</a> |
+    <a href="4.html">fråga 4</a> |
+    <a href="5.html">fråga 5</a> |
+</p>
+<p>Svar:<br>
+    <a href="1s.html">fråga 1</a> |
+    <a href="2s.html">fråga 2</a> |
+    <a href="3s.html">fråga 3</a> |
+    <a href="4s.html">fråga 4</a> |
+    <a href="5s.html">fråga 5</a> |
+</p>

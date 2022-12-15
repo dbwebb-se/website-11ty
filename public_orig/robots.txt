@@ -1,0 +1,7 @@
+Sitemap: https://dbwebb.se/sitemap.xml
+
+User-Agent: *
+Disallow:
+
+User-Agent: W3C-checklink
+Disallow:

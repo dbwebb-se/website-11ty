@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="theme-5">
+<meta charset="utf-8" />
+<link href="../html-slideshow.bundle.min.css" rel="stylesheet" />
+<link href="../style.css" rel="stylesheet" />
+<script src="https://dbwebb.se/cdn/js/html-slideshow_v1.1.0.bundle.min.js"></script>
+
+<title>Kursen databas</title>
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# JavaScript and MySQL
+## How to connect JavaScript with MySQL
+### Mikael Roos
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* Connections to MySQL
+* Node.js connectors
+* Example in JavaScript
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Connect to MySQL
+
+* MySQL Connectors provide connectivity to the MySQL server for client programs
+* APIs provide low-level access to MySQL
+* Execute MySQL statements from another language
+* ODBC, Java (JDBC), C++, Python, Node.js, PHP, Perl, Ruby, and C
+* Third-Party MySQL APIs
+
+<p class="footnote">Docs at https://dev.mysql.com/doc/connectors/en/connectors-apis.html.</p>
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="center">
+# Npm package mysql
+<figure>
+    <img src="img/npm-mysql.png" style="width: 80%">
+    <figcaption>The package mysql in the npm database.</figcaption>
+</figure>
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# The package mysql
+
+* Documentation in the README
+    * https://www.npmjs.com/package/mysql
+* Add a promisify layer using `promise-mysql`
+    * https://www.npmjs.com/package/promise-mysql
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="center">
+# Npm package promise-mysql
+<figure>
+    <img src="img/npm-promise-mysql.png" style="width: 80%">
+    <figcaption>The package promise-mysql in the npm database.</figcaption>
+</figure>
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Get going
+
+* Init the project and install the libraries
+
+```
+$ npm init
+$ npm install mysql promise-mysql --save
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Connect to MySQL
+
+```
+const mysql = require("promise-mysql");
+
+(async function() {
+    let sql;
+    let res;
+    const db = await mysql.createConnection({
+        "host":     "localhost",
+        "user":     "user",
+        "password": "pass",
+        "database": "skolan"
+    });
+
+    sql = "SELECT 1+1 AS Sum";
+    res = await db.query(sql);
+    console.info(res);
+    db.end();
+})();
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Use config.json
+
+```
+(async function() {
+    const db = await mysql.createConnection({
+        "host":     "localhost",
+        "user":     "user",
+        "password": "pass",
+        "database": "skolan"
+    });
+```
+
+```
+const config = require("./config.json");
+
+(async function() {
+    const db = await mysql.createConnection(config);
+
+})();
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Use config.json...
+
+```
+{
+    "host":     "localhost",
+    "user":     "user",
+    "password": "pass",
+    "database": "skolan"
+}
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Format SQL query
+
+```
+(async function() {
+    const db = await mysql.createConnection(config);
+    let sql, res;
+
+    sql = `
+        SELECT
+            akronym,
+            fornamn,
+            efternamn,
+            avdelning
+        FROM larare
+        ORDER BY akronym;
+    `;
+    res = await db.query(sql);
+    console.info(res);
+    db.end();
+})();
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# The resultset
+
+* An array with objects
+* The array contains the matching rows
+* Each row (object) contains the columns (values)
+
+```
+res = await db.query(sql);
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# The resultset...
+
+```
+res = await db.query(sql);
+```
+
+```
+[ RowDataPacket {
+    akronym: 'ala',
+    fornamn: 'Alastor',
+    efternamn: 'Moody',
+    avdelning: 'DIPT' },
+  RowDataPacket {
+    akronym: 'dum',
+    fornamn: 'Albus',
+    efternamn: 'Dumbledore',
+    avdelning: 'ADM' } ]
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# The resultset JSON
+
+```
+data = JSON.stringify(res, null, 4);
+```
+
+```
+[
+    {
+        "akronym": "ala",
+        "fornamn": "Alastor",
+        "efternamn": "Moody",
+        "avdelning": "DIPT"
+    },
+    {
+        "akronym": "dum",
+        "fornamn": "Albus",
+        "efternamn": "Dumbledore",
+        "avdelning": "ADM"
+    }
+}
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Use placeholders
+
+```
+sql = `
+    SELECT
+        akronym,
+        fornamn,
+        efternamn,
+        avdelning,
+        lon
+    FROM larare
+    WHERE
+        akronym LIKE ?
+        OR fornamn LIKE ?
+        OR efternamn LIKE ?
+        OR avdelning LIKE ?
+        OR lon = ?
+    ORDER BY akronym;
+`;
+res = await db.query(sql, [like, like, like, like, search]);
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="center">
+# Exploits of a Mom
+<figure>
+    <img src="https://imgs.xkcd.com/comics/exploits_of_a_mom.png" width="80%">
+    <figcaption>Comic about SQL injection https://xkcd.com/327/.</figcaption>
+</figure>
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# SQL injection
+
+* Use variable as holder for name
+
+```
+name = "Robert";
+sql = `SELECT * FROM student WHERE name = 'name'`;
+```
+
+* But what if the variable contains this?
+
+```
+name = "Robert'; DROP TABLE student; --";
+sql = `SELECT * FROM student WHERE name = 'name'`;
+
+SELECT * FROM student WHERE name = 'Robert'; DROP TABLE student; --'
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# SQL injection...
+
+* Placeholders will solve this and escape the value
+
+```
+name = "Robert'); DROP TABLE student; --";
+
+sql = `SELECT * FROM student WHERE name = ?`;
+
+res = await db.query(sql, [name]);
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Escape values
+
+* Values can be manually escaped
+
+```
+sql = 'SELECT * FROM users WHERE id = '
+    + connection.escape(userId);
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Avoid SQL injection
+
+* Use placeholders
+* Let the API escape the values
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="titlepage center">
+# The End
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+</script>

@@ -1,0 +1,26 @@
+{
+  "name": "website-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "content": "npx @11ty/eleventy --input=content --output=dist --formats=md",
+    "public": "npx @11ty/eleventy --input=public --output=dist",
+    "build": "npm run content && npm run public",
+    "serve": "npx @11ty/eleventy --serve --input=content --output=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbwebb-se/website-11ty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbwebb-se/website-11ty/issues"
+  },
+  "homepage": "https://github.com/dbwebb-se/website-11ty#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

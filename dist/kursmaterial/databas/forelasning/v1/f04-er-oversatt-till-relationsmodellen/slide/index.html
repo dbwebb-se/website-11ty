@@ -1,0 +1,275 @@
+<!doctype html>
+<html class="theme-5">
+<meta charset="utf-8" />
+<link href="../html-slideshow.bundle.min.css" rel="stylesheet" />
+<link href="../style.css" rel="stylesheet" />
+<script src="https://dbwebb.se/cdn/js/html-slideshow_v1.1.0.bundle.min.js"></script>
+
+<title>Kursen databas</title>
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# Översätt till relationsmodellen
+## Entity Relationship (ER), logisk modellering
+### Mikael Roos
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* Logisk ER-modellering
+* Översätta till relationsmodellen
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Faser för modellering
+
+<figure>
+<img style="background-color: white;" src="img/faser.png" width="60%">
+<figcaption>Tre faser med tre olika synsätt på modellen av databasen.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Logisk modellering
+
+* Översätt ER-modellen till relationsmodellen
+* Tabeller, primärnycklar, främmande nycklar
+* Datatyper
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Översätt till relationsmodellen
+
+* Inga många-många förhållanden (N:M)
+* Inga komplexa relationer
+    * Endast 1:1 eller 1:N
+* Inga flervärdesattribut
+    * Person har många telefonnummer
+    * Endast ett värde i varje cell
+* Varje rad är unik
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="titlepage center">
+# Översätt till relationsmodellen
+
+<p class="footnote">Materialet kommer från artikeln "Översättning från ER-modellen till relationsmodellen" på http://www.databasteknik.se/webbkursen/er/.</p>
+
+</script>
+
+
+<script data-role="slide" data-markdown type="text/html" class="titlepage center">
+# Översätt till relationsmodellen
+
+Låt oss se ett antal steg som hjälper oss att översätta ER-modellen till relationsmodellen.
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Vanliga entitetstyper
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/vanliga-entitetstyper.png" width="70%">
+<figcaption>Varje vanlig entitetstyp blir en tabell, med samma namn som entitetstypen. Vanliga attribut blir kolumner i tabellen.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# 1:N-sambandstyper
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/1-N-sambandstyper.png" width="60%">
+<figcaption>Varje 1:N-sambandstyp blir ett referensattribut i "många"-entitetstypens tabell. De två entitetstyperna blir två tabeller. Äger-sambandstypen blir ett referensattribut i Bil-tabellen</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# 1:1-sambandstyper
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/1-1-sambandstyp-er-ny.png" width="70%">
+<figcaption>Varje 1:1-sambandstyp blir ett referensattribut i den ena entitetstypens tabell. Ibland kan man slå ihop tabellerna.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# 1:1-sambandstyper...
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/1-1-sambandstyp.png" width="50%">
+<figcaption>A) Ett referensattribut i den ena tabellen. B) Ett referensattribut i den andra tabellen. C) Slå ihop tabellerna.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# N:M-sambandstyper
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/N-M-sambandstyper.png" width="50%">
+<figcaption>Varje N:M-sambandstyp blir en egen tabell. Tabellen Äger har en primärnyckel som består av både Person och Hus. Dessutom är Person referensattribut till tabellen Person, och Hus är referensattribut till tabellen Hus.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Sambandstyper > 2
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/sambandstyp-fler-an-2.png" width="70%">
+<figcaption>Trevägssamband, och samband av ännu högre grad, är det enklast att göra en mellantabell av.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Sambandstyper > 2...
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/sambandstyp-fler-an-2-tabell.png" width="80%">
+<figcaption>Sambandstypen Sett blir en egen tabell, som har en sammansatt primärnyckel bestående av primärnycklarna från de tre hopkopplade tabellerna.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Attribut sambandstyp
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/attribut-sambandstyp-1-N.png" width="60%">
+<figcaption>Attribut på sambandstyper blir kolumner. För 1:1- och 1:N-sambandstyper i samma tabell som den med referensattributet.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Attribut sambandstyp...
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/attribut-sambandstyp-NM-ny.png" width="60%">
+<figcaption>Attribut på sambandstyper blir kolumner. För N:M-sambandstyper i den särskilda sambandstabellen.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Svaga entitetstyper
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/svaga-entitetstyper.png" width="50%">
+<figcaption>Varje svag entitetstyp blir en tabell. Primärnyckeln består av den svaga entitetstypens partiella nyckel, kombinerad med den identifierande entitetstypens primärnyckel.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Sammansatta attribut
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/sammansatta-attribut.png" width="60%">
+<figcaption>Sammansatta attribut behandlas som om de bara bestod av delarna.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Flervärda attribut
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/flervart-attribut.png" width="40%">
+<figcaption>Varje flervärt attribut blir en egen tabell. Primärnyckeln består av entitetstypens primärnyckel, kombinerad med det flervärda attributet.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Härledda attribut
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/harlett-attribut.png" width="70%">
+<figcaption>Härledda attribut kan räknas ut, behövs inte lagras. Om man ändå väljer att lagra dem så blir det dubbelagring av data.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Arv i EER-modellen
+
+<figure>
+<img style="background-color: white; padding: 1em;" src="img/eer.png" width="80%">
+<figcaption>Varje subklass får en egen tabell som har samma primärnyckel som superklassen, plus subklassens extra kolumner.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Sammanfattning
+
+* Inga många-många förhållanden (N:M)
+    * Skapa kopplingstabell
+* Inga komplexa relationer
+    * Endast 1:1 eller 1:N
+* Inga flervärdesattribut
+* Varje rad är unik
+* Ingen dubbellagring
+* Rapporter kräver att data hämtas från flera tabeller
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html" class="titlepage center">
+# Slut
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+<!-- empty slide by intention -->
+</script>
