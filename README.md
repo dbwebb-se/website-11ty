@@ -24,6 +24,7 @@ The directory structure
 | `content` | The new and updated markdown content of the website. |
 | `public_orig` | The original html/css/js/php content of the website, named `htdocs` in the original website. |
 | `public` | The html/css/js/php content of the website. |
+| `dist` | The target directory where all the files are stored. |
 
 
 
